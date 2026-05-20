@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="screen">
+			<div class="display-top"><span id="procedure"></span></div>
+			<div class="display-main"><span id="result">0</span></div>
+		</div>
+
+		<div class="controls">
+			<button id="del" class="wide">DEL</button>
+			<button id="ac" class="wide">AC</button>
+			<button id="historyBtn" class="wide">Historial</button>
+		</div>
+
+		<div class="pad">
+			<div class="col ops">
+				<button class="op" data-op="+">+</button>
+				<button class="op" data-op="-">-</button>
+				<button class="op" data-op="/">/</button>
+				<button class="op" data-op="*">*</button>
+			</div>
+
+			<!-- Historial: panel oculto -->
+			<div id="historyPanel" class="history-panel hidden">
+				<div class="history-header">
+					<div>Historial (últimas 10)</div>
+					<div class="history-actions">
+						<button id="clearHistory">Borrar</button>
+						<button id="closeHistory">Cerrar</button>
+					</div>
+				</div>
+				<div id="historyList" class="history-list"></div>
+			</div>
+
+			<div class="col nums">
+				<div class="row">
+					<button class="num" data-num="1">1</button>
+					<button class="num" data-num="2">2</button>
+					<button class="num" data-num="3">3</button>
+				</div>
+				<div class="row">
+					<button class="num" data-num="4">4</button>
+					<button class="num" data-num="5">5</button>
+					<button class="num" data-num="6">6</button>
+				</div>
+				<div class="row">
+					<button class="num" data-num="7">7</button>
+					<button class="num" data-num="8">8</button>
+					<button class="num" data-num="9">9</button>
+				</div>
+				<div class="row bottom">
+					<button class="num" data-num="0">0</button>
+					<button id="dot">.</button>
+					<button id="equals">=</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="src/assets/js/app.js"></script>
+</body>
+</html>
+
